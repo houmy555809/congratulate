@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <style>
+   .normal{
+    font-family:楷体;
+    font-size:16px;
+   }
+   .medium{
+    font-family:楷体;
+    font-size:30px;
+   }
+   .big{
+    font-family:楷体;
+    color:red;
+    font-size:35px;
+    text-shadow:2px 2px 1px lightgrey;
+   }
+   .box{
+    background-color:#F0F0F0;
+    border-radius:3px;
+   }
+  </style>
+  <script>
+var sayings=["读万卷书，行万里路光阴易逝，岂容我待黑发不知勤学早，白首方悔读书迟。","明日复明日，明日何其多；我生待明日，万事成蹉跎！","一分耕耘，一分收获；要收获的好，必须耕耘的好学问二字，须要拆开看，学是学，问是问光阴易逝，岂容我待","时间是最公开合理的，它从不多给谁一份，勤劳者能叫时间留给串串的果实，懒惰者时间给予他们一头白发，两手空空。&emsp;——高尔基","一切利己的生活，自以时间来衡量生命。爱，则无所不为；过于自爱，则一无所为。&emsp;——吕坤","白日去如箭，达者惜今阳。&emsp;——朱敦儒","光阴是有脚当珍惜，书田无税应勤耕。","抛弃今天的人，不会有明天；而昨天，不过是行云流水。","盛年不重来，一日难再晨。"]
+window.onload=function(){
+ var e=document.getElementById("saying");
+ e.innerHTML=sayings[Math.floor(Math.random()*sayings.length)];
+}
+  </script>
+ </head>
+ <body>
+  <div class="box">
+   <p class="normal">感谢你每天坚持打卡！</p>
+   <p class="big">明天继续加油哦！</p>
+   <hr>
+   <p class="medium" id="saying"></p>
+  </div>
+ </body>
+</html>
